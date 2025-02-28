@@ -1,0 +1,14 @@
+calificaciones = []
+for n in range(5):
+    calificacion = float(input(f"Ingrese la calificación {n+1}:"))
+    calificaciones.append(calificacion)
+#calculo del promedio
+promedio = sum(calificaciones) / len(calificaciones)
+#resultado segun el promedio
+if promedio >= 60:
+    print("Aprobado")
+elif 40 <= promedio < 60:
+    print("En recuperación")
+else:
+    print("Reprobado")
+    
